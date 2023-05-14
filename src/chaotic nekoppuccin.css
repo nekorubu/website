@@ -1,0 +1,29 @@
+:root {
+    --chaotic-rosewater: hsl(10, 56%, 91%);
+    --chaotic-flamingo: hsl(0, 58%, 88%);
+    --chaotic-pink: hsl(316, 72%, 86%);
+    --chaotic-fuschia: hsl(302, 72%, 86%);
+    --chaotic-mauve: hsl(267, 84%, 81%);
+    --chaotic-red: hsl(343, 81%, 75%);
+    --chaotic-maroon: hsl(350, 65%, 77%);
+    --chaotic-peach: hsl(23, 92%, 75%);
+    --chaotic-yellow: hsl(41, 86%, 83%);
+    --chaotic-green: hsl(115, 54%, 76%);
+    --chaotic-teal: hsl(170, 57%, 73%);
+    --chaotic-sky: hsl(189, 71%, 73%);
+    --chaotic-sapphire: hsl(199, 76%, 69%);
+    --chaotic-lavender: hsl(232, 97%, 85%);
+    --chaotic-blue: hsl(217, 92%, 76%);
+    --chaotic-text: hsl(295, 63%, 82%);
+    --chaotic-subtext1: hsl(295, 35%, 74%);
+    --chaotic-subtext0: hsl(296, 24%, 66%);
+    --chaotic-overlay2: hsl(294, 18%, 55%);
+    --chaotic-overlay1: hsl(298, 13%, 49%);
+    --chaotic-overlay0: hsl(297, 11%, 41%);
+    --chaotic-surface2: hsl(300, 12%, 33%);
+    --chaotic-surface1: hsl(300, 13%, 25%);
+    --chaotic-surface0: hsl(300, 16%, 17%);
+    --chaotic-base: hsl(305, 24%, 9%);
+    --chaotic-mantle: hsl(310, 23%, 5%);
+    --chaotic-crust: hsl(300, 20%, 1%);
+}
