@@ -1,5 +1,10 @@
 @import url('https://api.fonts.coollabs.io/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://api.fonts.coollabs.io/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(./nekoppuccin.css);
+
+:root {
+    --rad: 10px;
+}
 
 body {
     padding: 15px;
@@ -7,20 +12,22 @@ body {
     font-family: 'Inter Tight', sans-serif;
 }
 
-nav {
+/* Navbar links */
+nav a {
     font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
 }
 
+/* Greeting header */
 header {
     margin-bottom: 30px;
 }
 
 .pfp {
     width: 20rem;
-    height: auto;
-    align-items: flex-end;
     border-radius: 50%;
-    display: -webkit-box;
+    display: block;
     margin-left: auto;
 }
 
@@ -36,8 +43,29 @@ section.greeting {
     color: var(--lawful-subtext1);
 }
 
+/* Main content */
 main {
     background-color: var(--lawful-surface0);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: var(--rad);
+}
+
+/* Projects Page */
+.proj-container {
+    display: flex;
+    height: 100%;
+}
+
+.proj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 10px;
+    width: 50%;
+    border-radius: var(--rad);
+    background-color: var(--lawful-surface0);
+    /* TODO add images for project backgrounds */
+    /* background-image: ; */
+    backdrop-filter: blur(6px);
 }
