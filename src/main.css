@@ -4,6 +4,7 @@
 
 :root {
     --rad: 10px;
+    color: var(--lawful-text);
 }
 
 body {
