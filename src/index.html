@@ -4,25 +4,47 @@
         <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <title>nekobu's website</title>
-        <script src="https://unpkg.com/phosphor-icons"></script>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css">
         <link rel="stylesheet" type="text/css" href="main.css"/>
+        <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
     </head>
     <body>
-        <nav>
-            <a href="./projects.html">Projects</a>
-            <a href="./about.html">About Me</a>
-        </nav>
         <header>
-            <div>
-                <img src="img/kobu.png" alt="A dark fuchsia Tails" class="pfp"/>
+            <div class="greeting-block">
+                <div class="greeting">Hi, I'm <span>nekobu</span></div>
+                <section class="greeting">
+                    <div>I like to make stuff look nice</div>
+                </section>
             </div>
-            <div class="greeting">Hi, I'm <span>nekobu</span></div>
-            <section class="greeting">
-                <div>I like to make stuff look nice</div>
-            </section>
+            <div class="profile-container">
+                <div class="profile">
+                    <img src="img/kobu.png" alt="A dark fuchsia Tails" class="pfp"/>
+                    <div class="link-icon-block">
+                        <!-- TODO: Add an email that people can contact -->
+                        <a href="">
+                            <i class="ph ph-envelope-simple link-icon"></i>
+                        </a>
+                        <a href="https://github.com/nekorubu/">
+                            <i class="ph ph-github-logo link-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </header>
-        <main>
-            testing
-        </main>
+        <h2>Projects</h2>
+        <div class="proj-container">
+            <a href="https://github.com/nekorubu/Signal-You" class="proj">
+                Signal-You
+            </a>
+            <a href="https://github.com/nekorubu/nekocons" class="proj">
+                nekocons
+            </a>
+            <a href="" class="proj">
+                Video Creation
+            </a>
+            <a href="https://github.com/nekorubu/website" class="proj">
+                This website
+            </a>
+        </div>
     </body>
 </html>

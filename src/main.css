@@ -2,6 +2,7 @@
 @import url('https://api.fonts.coollabs.io/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url(./nekoppuccin.css);
 
+/* Global styles, variables */
 :root {
     --rad: 10px;
     color: var(--lawful-text);
@@ -13,8 +14,11 @@ body {
     font-family: 'Inter Tight', sans-serif;
 }
 
-/* Navbar links */
-nav a {
+a {
+    text-decoration: none;
+}
+
+nav {
     font-family: 'Manrope', sans-serif;
     font-weight: bold;
     text-decoration: none;
@@ -23,18 +27,21 @@ nav a {
 /* Greeting header */
 header {
     margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 10px;
 }
 
-.pfp {
-    width: 20rem;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
+.greeting-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .greeting {
     font-weight: 500;
-    font-size: 9rem;
+    font-size: 6rem;
     color: var(--chaotic-text);
 }
 
@@ -44,26 +51,67 @@ section.greeting {
     color: var(--lawful-subtext1);
 }
 
-/* Main content */
-main {
-    background-color: var(--lawful-surface0);
-    padding: 10px;
-    border-radius: var(--rad);
+/* Profile (Profile Picture + Link icons) */
+
+.profile-container {
+    display: flex;
+    justify-content: end;
 }
 
-/* Projects Page */
-.proj-container {
+.profile {
     display: flex;
-    height: 100%;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.pfp {
+    width: 20rem;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.link-icon-block {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.link-icon {
+    font-size: 48px;
+    color: var(--lawful-text);
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+/* Project Showcase */
+
+h2 {
+    font-size: 3rem;
+    padding-left: 10px;
+}
+
+.proj-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .proj {
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-weight: bold;
+    color: var(--lawful-text);
+    text-decoration: none;
+    font-size: 3rem;
+    
     margin: 10px;
-    width: 50%;
+    height: 25rem;
     border-radius: var(--rad);
     background-color: var(--lawful-surface0);
     /* TODO add images for project backgrounds */
